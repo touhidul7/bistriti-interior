@@ -23,9 +23,7 @@ const Footer = () => {
                             </span>
                         </Link>
                         <div className="text-justify text-gray-400 font-medium">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sunt,
-                            recusandae nam quisquam repellat quidem mollitia reiciendis
-                            repellendus ullam nobis iste dolorem.
+                        Designing spaces that inspire and endure. We create architecture that blends beauty with purpose, tailored to your vision and needs.
                         </div>
                     </div>
                     <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-6">

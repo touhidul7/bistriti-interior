@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import React, { useEffect, useState } from "react";
+import Homecatagory from './Components/Homecomponents/Homecatagory';
+import Landmark from './Components/Homecomponents/Landmark';
 
 const page = () => {
   return (
@@ -26,6 +28,8 @@ const page = () => {
         </button>
       </div>
     </section>
+    <Homecatagory/>
+    <Landmark/>
     </>
   );
 };
