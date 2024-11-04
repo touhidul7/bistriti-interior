@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import Homecatagory from './Components/Homecomponents/Homecatagory';
 import Landmark from './Components/Homecomponents/Landmark';
 import recentWork from "@/public/data/recent-work.json"
+import Sectionheading from './Components/commoncomponents/Sectionheading';
 const page = () => {
   return (
     <>
@@ -39,19 +40,24 @@ const page = () => {
           </h1>
         </div>
       </section>
-      <Homecatagory />
       <Landmark />
+      <div className='py-10 '>
+        <Sectionheading title={"Catagory"} />
+        <Homecatagory />
+      </div>
+      
 
       {/* recent work */}
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-5 mx-auto">
-          <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-20">
-            <h1 className="text-9xl font-bold  text-white -mb-16 opacity-[6%]">
+          <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-0">
+            {/* <h1 className="text-9xl font-bold  text-white -mb-16 opacity-[6%]">
               RECENT WORK
             </h1>
             <h2 className="text-8xl font-semibold  text-white mb-10 fade-in2">
               RECENT WORK
-            </h2>
+            </h2> */}
+            <Sectionheading title={"RECENT WORK"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
               <div className="px-4 mx-auto sm:px-6 lg:px-2 max-w-7xl">
