@@ -6,7 +6,7 @@ import allMembers from "@/public/data/allMembers.json";
 import experts from "@/public/data/experts.json";
 import Image from "next/image";
 import clients from "@/public/data/clients.json";
-
+import aboutheroimg from "@/public/about-page/home-header.jpg"
 const Page = () => {
   return (
     <>
@@ -42,8 +42,10 @@ const Page = () => {
 
       <div className="relative bg-gradient-to-r from-black-800 to-black-800 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="../about-page/about-heading.jpg"
+          <Image
+            height={100}
+            width={100}
+            src={aboutheroimg}
             alt="Background Image"
             className="object-cover object-center w-full h-full zoom-in"
           />
@@ -54,7 +56,7 @@ const Page = () => {
           <h1 className="text-9xl font-bold leading-tight mb-4 fade-in">
             ABOUT US
           </h1>
-          <p className="text-lg text-2xl text-gray-300 mb-8">
+          <p className="text-lg lg:text-2xl text-gray-300 mb-8">
             MAKE YOUR IMAGINATION TO REALITY
           </p>
         </div>
@@ -105,12 +107,16 @@ const Page = () => {
                       </p>
                     </div>
                     <div className="col-span-2 grid grid-cols-2 gap-6 mt-8">
-                      <img
+                      <Image
+                        width={100}
+                        height={100}
                         className="w-full"
                         src="../about-page/story/story-1.png"
                         alt="office content 1"
                       />
-                      <img
+                      <Image
+                        width={100}
+                        height={100}
                         className="mt-4 w-full lg:mt-10"
                         src="../about-page/story/story-2.png"
                         alt="office content 2"
@@ -140,7 +146,9 @@ const Page = () => {
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-x-12">
                   {experts.map((expert, index) => (
                     <div key={index}>
-                      <img
+                      <Image
+                        height={100}
+                        width={100}
                         className="w-full"
                         src={expert.image}
                         alt={expert.alt}
@@ -170,7 +178,9 @@ const Page = () => {
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-x-12">
                   {allMembers.map((member, index) => (
                     <div key={index}>
-                      <img
+                      <Image
+                        width={100}
+                        height={1000}
                         className="w-full"
                         src={member.image}
                         alt={member.alt}
@@ -203,7 +213,7 @@ const Page = () => {
                     {item.align === "left" ? (
                       <>
                         <div className="lg:w-[60%] xs:w-full">
-                          <img src={item.image} alt="why us" />
+                          <Image src={item.image} alt="why us" width={600} height={400} />
                         </div>
                         <div className="lg:w-[50%] sm:w-full text-start xs:w-full dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
                           <h2 className="text-6xl font-bold text-white">
@@ -225,7 +235,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className="md:block sm:hidden xs:hidden lg:w-[60%] xs:w-full">
-                          <img src={item.image} alt="why us" />
+                          <Image src={item.image} alt="why us" width={600} height={400} />
                         </div>
                       </>
                     )}
@@ -272,7 +282,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-      
+
     </>
   );
 };
