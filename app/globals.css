@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* styles.css or your CSS file */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Optional for a slight upward movement */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Duration and easing function */
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset the transform */
+}
+
+
+/*  */
 body{
   background-color: black;
   

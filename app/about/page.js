@@ -1,18 +1,24 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import { Carousel } from "flowbite-react";
-import React, { useEffect } from "react";
+import React from "react";
 import whyUs from "@/public/data/whyChoose.json";
 import allMembers from "@/public/data/allMembers.json";
 import experts from "@/public/data/experts.json";
 import Image from "next/image";
 import clients from "@/public/data/clients.json";
-import aboutheroimg from "@/public/about-page/about-heading.jpg"
+import aboutheroimg from "@/public/about-page/about-heading.jpg";
+import Sectionheading from "../Components/commoncomponents/Sectionheading";
+import { motion } from "framer-motion";
+
 const Page = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* ABOUT-HEADER------ */}
+<<<<<<< HEAD
 
+=======
+>>>>>>> c968f59f44a4799583931ffe1be1336424a42f8e
       <div className="relative bg-gradient-to-r from-black-800 to-black-800 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -45,16 +51,18 @@ const Page = () => {
         </div>
       </div>
 
-      {/* Our Story--------- */}
+      {/* Our Story------------------ */}
+      {/* <motion.div
+      className="mt-20"
+      initial={{x:300}}
+      whileInView={{x:0}}
+      transition={{duration: 1, delay: 0.1, ease: "easeOut"}}
+      > */}
+      {/* </motion.div> */}
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-5 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-20">
-            <h1 className="text-9xl font-bold  text-white -mb-16 opacity-[5%]">
-              OUR STORY
-            </h1>
-            <h2 className="text-8xl font-semibold  text-white mb-10 fade-in2">
-              OUR STORY
-            </h2>
+            <Sectionheading title={"OUR STORY"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
               <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -87,13 +95,24 @@ const Page = () => {
                         src="../about-page/story/story-1.png"
                         alt="office content 1"
                       />
-                      <Image
-                        width={100}
-                        height={100}
-                        className="mt-4 w-full lg:mt-10"
-                        src="../about-page/story/story-2.png"
-                        alt="office content 2"
-                      />
+                      <motion.div
+                        className="w-fit lg:mt-10"
+                        initial={{ y: 300 }}
+                        whileInView={{ y: 0 }}
+                        transition={{
+                          duration: 1,
+                          delay: 0.1,
+                          ease: "easeOut",
+                        }}
+                      >
+                        <Image
+                          width={100}
+                          height={100}
+                          className="w-full"
+                          src="../about-page/story/story-2.png"
+                          alt="office content 2"
+                        />
+                      </motion.div>
                     </div>
                   </div>
                 </section>
@@ -107,12 +126,7 @@ const Page = () => {
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-10">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              OUR EXPERTS
-            </h1>
-            <h2 className="text-8xl font-semibold text-white mb-20 fade-in2">
-              OUR EXPERTS
-            </h2>
+            <Sectionheading title={"OUR EXPERTS"} direction={"left"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
               <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -139,12 +153,7 @@ const Page = () => {
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              ALL MEMBERS
-            </h1>
-            <h2 className="text-8xl font-semibold text-white mb-20">
-              ALL MEMBERS
-            </h2>
+            <Sectionheading title={"ALL MEMBERS"} direction={"right"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
               <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -171,10 +180,7 @@ const Page = () => {
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              WHY US
-            </h1>
-            <h2 className="text-8xl font-semibold text-white">WHY US</h2>
+            <Sectionheading title={"WHY US"} direction={"left"} />
 
             <section className="py-10 sm:py-16 lg:py-20">
               <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -186,7 +192,12 @@ const Page = () => {
                     {item.align === "left" ? (
                       <>
                         <div className="lg:w-[60%] xs:w-full">
-                          <Image src={item.image} alt="why us" width={600} height={400} />
+                          <Image
+                            src={item.image}
+                            alt="why us"
+                            width={600}
+                            height={400}
+                          />
                         </div>
                         <div className="lg:w-[50%] sm:w-full text-start xs:w-full dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
                           <h2 className="text-6xl font-bold text-white">
@@ -208,7 +219,12 @@ const Page = () => {
                           </p>
                         </div>
                         <div className="md:block sm:hidden xs:hidden lg:w-[60%] xs:w-full">
-                          <Image src={item.image} alt="why us" width={600} height={400} />
+                          <Image
+                            src={item.image}
+                            alt="why us"
+                            width={600}
+                            height={400}
+                          />
                         </div>
                       </>
                     )}
@@ -224,10 +240,7 @@ const Page = () => {
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              OUR CLIENTS
-            </h1>
-            <h2 className="text-8xl font-semibold text-white">OUR CLIENTS</h2>
+            <Sectionheading title={"OUR CLIENTS"} direction={"right"} />
 
             <section className="py-10 sm:py-16 lg:py-20">
               <section className="py-base container">
@@ -250,13 +263,10 @@ const Page = () => {
                 </div>
               </section>
             </section>
-
-
           </div>
         </div>
       </section>
-
-    </>
+    </div>
   );
 };
 
