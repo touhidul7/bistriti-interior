@@ -1,17 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 // React
 import { motion } from "framer-motion";
 
 export default function Sectionheading({ title, direction }) {
-  const [prefx, setPrefx] = useState(0);
-  useEffect(() => {
-    if (direction === "left") {
-      setPrefx(300);
-    } else {
-      setPrefx(-300);
-    }
-  }, [direction]);
+
 
   return (
     <>
@@ -20,7 +13,7 @@ export default function Sectionheading({ title, direction }) {
           {title}
         </h1>
         <motion.div
-          initial={{ x: prefx }}
+          initial={{ x: direction === "left" ? 300 : -300 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 2, delay: 0.1, ease: "easeOut" }}
         >
