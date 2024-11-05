@@ -11,12 +11,13 @@ const page = () => {
     <>
       <section
         className="relative bg-cover bg-center h-screen flex items-end"
-        style={{
+         style={{
           backgroundImage: `url('../about-page/about-heading.jpg')`,
           backgroundAttachment: "fixed",
-        }}
+        }} 
+         
       >
-        <div className="relative z-10 text-start text-white">
+        <div className="relative text-start text-white">
           <h1 className="text-4xl md:text-2xl bg-black w-[440px]  ps-20 pe-16 pt-[104px] text-[#BABABA] pb-20">
             We begin with in-depth consultations to capture your vision and
             preferences

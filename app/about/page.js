@@ -47,7 +47,7 @@ const Page = () => {
             alt="Background Image"
             className="object-cover object-center w-full h-full zoom-in"
           />
-          <div className="absolute inset-0 bg-black opacity-70"></div>
+          <div className="absolute inset-0 bg-black opacity-55"></div>
         </div>
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
