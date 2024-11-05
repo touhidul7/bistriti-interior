@@ -15,10 +15,6 @@ const Page = () => {
   return (
     <div className="overflow-x-hidden">
       {/* ABOUT-HEADER------ */}
-<<<<<<< HEAD
-
-=======
->>>>>>> c968f59f44a4799583931ffe1be1336424a42f8e
       <div className="relative bg-gradient-to-r from-black-800 to-black-800 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Homecatagory from './Components/Homecomponents/Homecatagory';
 import Landmark from './Components/Homecomponents/Landmark';
 import recentWork from "@/public/data/recent-work.json"
