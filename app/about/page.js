@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { Carousel } from "flowbite-react";
 import React, { useEffect } from "react";
