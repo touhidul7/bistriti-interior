@@ -12,34 +12,6 @@ const Page = () => {
   return (
     <>
       {/* ABOUT-HEADER------ */}
-      {/* <div className="relative bg-gradient-to-r from-black-800 to-black-800 h-screen text-white overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="../bistriti-about.jpg"
-            alt="Background Image"
-            className="object-cover object-center w-full h-full"
-          />
-
-          <div className="absolute inset-0 bg-black opacity-70"></div>
-        </div>
-
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <h1 className="text-9xl font-bold leading-tight mb-4">ABOUT US</h1>
-          <p className="text-lg text-2xl text-gray-300 mb-8 ">
-            MAKE YOUR IMAGINATION TO REALITY
-          </p>
-        </div>
-
-        <div className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gray-500 opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100"></div>
-          <div className="relative z-10 p-6">
-            <h1 className="text-white">Fade In Effect</h1>
-            <p className="text-white">
-              Hover over this area to see the fade effect from top to down.
-            </p>
-          </div>
-        </div>
-      </div> */}
 
       <div className="relative bg-gradient-to-r from-black-800 to-black-800 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">

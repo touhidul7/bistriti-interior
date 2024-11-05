@@ -7,28 +7,30 @@ import Landmark from './Components/Homecomponents/Landmark';
 import recentWork from "@/public/data/recent-work.json"
 import Sectionheading from './Components/commoncomponents/Sectionheading';
 const page = () => {
+
   return (
     <>
       <section
         className="relative bg-cover bg-center h-screen flex items-end"
-         style={{
-          backgroundImage: `url('../about-page/about-heading.jpg')`,
+        style={{
+          backgroundImage: `url('../home-header4.jpg')`,
           backgroundAttachment: "fixed",
-        }} 
+          backgroundSize: "cover",
+        }}
          
       >
         <div className="relative text-start text-white">
-          <h1 className="text-4xl md:text-2xl bg-black w-[440px]  ps-20 pe-16 pt-[104px] text-[#BABABA] pb-20">
+          <h1 className="text-4xl md:text-2xl bg-black w-[440px]  ps-20 pe-4 pt-[104px] text-[#BABABA] border-r-[12px] border-[#750000] pb-20">
             We begin with in-depth consultations to capture your vision and
             preferences
           </h1>
-          <h1 className="text-4xl md:text-9xl  font-bold w-[540px] ps-20 bg-black">
+          <h1 className="text-4xl md:text-9xl  font-bold w-[540px] border-r-[12px] border-[#750000] ps-20 bg-black">
             Design
           </h1>
-          <h1 className="text-4xl md:text-9xl font-bold w-[600px] ps-20 bg-black">
+          <h1 className="text-4xl md:text-9xl font-bold w-[600px] ps-20 border-r-[12px]  border-[#750000] bg-black">
             Beyond
           </h1>
-          <h1 className="text-4xl md:text-9xl font-bold w-[1010px] pb-10 ps-20 bg-black">
+          <h1 className="text-4xl md:text-9xl font-bold w-[1010px] pb-10 ps-20 border-r-[12px] border-[#750000] bg-black">
             Boundaries
             <span className="ml-9 item-center">
               <button className="group relative min-h-[65px] w-48 overflow-hidden border border-white hover:border-[#750000]  transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#750000] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#750000] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full md:text-2xl">
@@ -41,6 +43,8 @@ const page = () => {
           </h1>
         </div>
       </section>
+
+
       <Landmark />
       <div className='py-10 '>
         <Sectionheading title={"Catagory"} />

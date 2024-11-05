@@ -4,6 +4,7 @@
 
 body{
   background-color: black;
+  
 }
 .zoom-in {
     animation: zoom 12s infinite alternate; /* Adjust duration and alternate behavior */
