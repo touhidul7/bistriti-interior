@@ -12,7 +12,7 @@ import logo from "@/app/icon.png";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0F0F0F]">
+        <footer className="bg-black">
             <div className="mx-auto w-full max-w-screen-xl px-6 lg:px-4 p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0 w-[20%] space-y-6">
