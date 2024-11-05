@@ -7,7 +7,7 @@ import allMembers from "@/public/data/allMembers.json";
 import experts from "@/public/data/experts.json";
 import Image from "next/image";
 import clients from "@/public/data/clients.json";
-import aboutheroimg from "@/public/about-page/home-header.jpg"
+import aboutheroimg from "@/public/about-page/about-heading.jpg"
 const Page = () => {
   return (
     <>
@@ -50,7 +50,7 @@ const Page = () => {
             alt="Background Image"
             className="object-cover object-center w-full h-full zoom-in"
           />
-          <div className="absolute inset-0 bg-black opacity-70"></div>
+          <div className="absolute inset-0 bg-black opacity-55"></div>
         </div>
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
