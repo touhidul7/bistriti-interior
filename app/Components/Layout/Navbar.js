@@ -24,7 +24,7 @@ const Navbar = () => {
   ]
   return (
     <>
-      <div className="navbar bg-black text-white  overflow-x-visible  px-20">
+      <div className="navbar bg-black text-white fixed w-full top-0 z-50 overflow-x-visible  px-20">
         <div className="navbar-start">
 
           <Image
