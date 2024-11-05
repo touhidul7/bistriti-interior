@@ -2,15 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-/* .about-bg{
-  background-image: url("../public/about-page/about-heading.jpg");
-  background-attachment:fixed ;
-  
-} */
-
-
+body{
+  background-color: black;
+}
 .zoom-in {
     animation: zoom 12s infinite alternate; /* Adjust duration and alternate behavior */
   }
