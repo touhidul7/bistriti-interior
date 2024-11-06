@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {/* Mobile nav */}
-        <div className="dropdown dropdown-end lg:hidden">
+        <div className="dropdown dropdown-end lg:hidden bg-black">
           <div tabIndex={0} role="button">
             <IoIosMenu className="h-8 w-auto" />
           </div>
