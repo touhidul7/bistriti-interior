@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="navbar bg-black text-white fixed w-full top-0 z-50 overflow-x-visible px-20">
+    <div className="navbar bg-black text-white fixed w-full top-0 z-50 overflow-x-visible lg:px-20">
       <Link href={"/"} className="navbar-start">
         <Image
           src={logo} 
@@ -45,7 +45,7 @@ const Navbar = () => {
         {/* Mobile nav */}
         <div className="dropdown dropdown-end lg:hidden bg-black">
           <div tabIndex={0} role="button">
-            <IoIosMenu className="h-8 w-auto" />
+            <IoIosMenu className="h-8 w-auto " />
           </div>
           <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
             {menus.map((menu, index) => (

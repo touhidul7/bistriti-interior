@@ -2,70 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* styles.css or your CSS file */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px); /* Optional for a slight upward movement */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Duration and easing function */
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .fade-in.visible {
   opacity: 1;
-  transform: translateY(0); /* Reset the transform */
+  transform: translateY(0);
 }
 
-
-/*  */
-body{
+body {
   background-color: black;
-  
 }
 .zoom-in {
-    animation: zoom 12s infinite alternate; /* Adjust duration and alternate behavior */
+  animation: zoom 12s infinite alternate;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
   }
-
-  @keyframes zoom {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(2); /* Adjust scale factor for zoom */
-    }
+  100% {
+    transform: scale(2);
   }
+}
 
+/* title animate-- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-150px);
+  animation: fadeIn 3s forwards;
+  animation-delay: 0.5s;
+}
 
-  /* title animate-- */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(-150px); /* Start from above */
-    animation: fadeIn 3s forwards; /* Duration of fade-in effect */
-    animation-delay: .5s; /* Delay before the fade-in starts */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-      transform: translateY(0); /* End at original position */
-    }
-  }
-
-
-  /* expert */
-  /* .fade-in2{
-    opacity: 0;
-    transform: translatex(-150px); 
-    animation: fadeIn 6s forwards; 
-    animation-delay: .5s; 
-  }
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-      transform: translateY(0); 
-    }
-  } */
-
-
-  
-  
-  
+}
