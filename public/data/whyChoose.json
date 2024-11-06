@@ -3,12 +3,21 @@
       "title": "Uncompromising Quality and Craftsmanship",
       "description": "Our commitment to quality is unmatched. We source premium materials and work with experienced craftsmen to ensure every detail is perfect, providing you with interiors that stand the test of time.",
       "image": "../about-page/why-us/why-us1.png",
-      "align": "left"
+      "align": "left",
+      "type": "image"
+    },
+    {
+      "title": "Innovative Approach with Modern Trends",
+      "description": "Our designers stay up-to-date with the latest trends, techniques, and technologies in interior and architectural design. We blend classic principles with modern touches to create spaces that are both current and timeless.",
+      "image": "https://www.youtube.com/embed/RWXiF91G6xo?si=30yN3IglqezBxlwY",
+      "align": "right",
+      "type": "video"
     },
     {
       "title": "Innovative Approach with Modern Trends",
       "description": "Our designers stay up-to-date with the latest trends, techniques, and technologies in interior and architectural design. We blend classic principles with modern touches to create spaces that are both current and timeless.",
       "image": "../about-page/why-us/why-us2.png",
+<<<<<<< HEAD
       "align": "right"
     }, 
     {
@@ -16,5 +25,9 @@
       "description": "Our designers stay up-to-date with the latest trends, techniques, and technologies in interior and architectural design. We blend classic principles with modern touches to create spaces that are both current and timeless.",
       "image": "../about-page/why-us/why-us2.png",
       "align": "left"
+=======
+      "align": "left",
+      "type": "image"
+>>>>>>> 5282c5e9ed9ea02d92238882a1c89a0ba006acea
     }
   ]

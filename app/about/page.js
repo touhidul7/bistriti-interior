@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from "react";
-import whyUs from "@/public/data/whyChoose.json";
 import allMembers from "@/public/data/allMembers.json";
 import experts from "@/public/data/experts.json";
 import Image from "next/image";
@@ -10,6 +9,7 @@ import clients from "@/public/data/clients.json";
 import aboutheroimg from "@/public/about-page/about-heading.jpg";
 import Sectionheading from "../Components/commoncomponents/Sectionheading";
 import { motion } from "framer-motion";
+import Whychooseus from "../Components/AboutComponents/Whychooseus";
 
 const Page = () => {
   return (
@@ -172,6 +172,7 @@ const Page = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* why Us--------- */}
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-10 mx-auto">
@@ -231,6 +232,10 @@ const Page = () => {
           </div>
         </div>
       </section>
+=======
+      {/* why choose--------- */}
+      <Whychooseus/>
+>>>>>>> 5282c5e9ed9ea02d92238882a1c89a0ba006acea
 
       {/* our clients--------- */}
       <section className="bg-black dark:bg-gray-900">
