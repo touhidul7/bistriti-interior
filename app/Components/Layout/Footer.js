@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className="bg-black">
             <div className="mx-auto w-full max-w-screen-xl px-6 lg:px-4 p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
-                    <div className="mb-6 md:mb-0 w-[20%] space-y-6">
+                    <div className="mb-6 md:mb-0 lg:w-[20%] space-y-6">
                         <Link href={"/"} className="flex gap-2 items-center lg:mb-0 mb-10">
                             <Image src={logo} className="h-8 w-auto" alt="Bistriti Logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">

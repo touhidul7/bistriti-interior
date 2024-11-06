@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <section
-        className="relative bg-cover bg-center h-[700px] lg:h-screen flex items-end"
+        className="relative bg-black bg-cover bg-center mt-10 max-h-screen lg:h-screen flex items-end"
         style={{
           backgroundImage: `url('../home-header4.jpg')`,
           backgroundAttachment: "fixed",
@@ -19,7 +19,7 @@ const page = () => {
         }}
         >
         <div className="relative text-start text-white">
-          <h1 className="text-[18px] lg:text-2xl md:text-2xl bg-black w-[200px] lg:w-[440px] ps-5 lg:ps-20 pe-6 lg:pe-4 pt-10 lg:pt-[104px] text-[#BABABA] border-r-[12px] border-[#750000] pb-24 lg:pb-20">
+          <h1 className="text-[18px] lg:text-2xl md:text-2xl bg-black w-[200px] lg:w-[440px] text-justify lg:ps-20 px-5 lg:pe-4 pt-10 lg:pt-[104px] text-[#BABABA] border-r-[12px] border-[#750000] pb-24 lg:pb-20">
             We begin with in-depth consultations to capture your vision and
             preferences
           </h1>
@@ -45,7 +45,7 @@ const page = () => {
 
 
       <Landmark />
-      <div className='py-28'>
+      <div className='lg:py-28 pt-28 pb-16'>
         <Sectionheading title={"Catagory"} />
         <Homecatagory />
       </div>
