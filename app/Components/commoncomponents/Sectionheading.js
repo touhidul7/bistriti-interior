@@ -9,7 +9,7 @@ export default function Sectionheading({ title, direction }) {
   return (
     <>
       <div className="bg-black text-center section-heading">
-        <h1 className="text-[39px] lg:text-9xl font-bold  text-white -mb-8 opacity-[6%]">
+        <h1 className="text-[39px] lg:text-9xl font-bold  text-white -mb-16 opacity-[5%]">
           {title}
         </h1>
         <motion.div

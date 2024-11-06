@@ -172,7 +172,7 @@ const Page = () => {
         </div>
       </section>
 
-      {/* why choose--------- */}
+      {/* why Us--------- */}
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">

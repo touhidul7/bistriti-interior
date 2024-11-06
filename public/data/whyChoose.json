@@ -10,5 +10,11 @@
       "description": "Our designers stay up-to-date with the latest trends, techniques, and technologies in interior and architectural design. We blend classic principles with modern touches to create spaces that are both current and timeless.",
       "image": "../about-page/why-us/why-us2.png",
       "align": "right"
+    }, 
+    {
+      "title": "Innovative Approach with Modern Trends",
+      "description": "Our designers stay up-to-date with the latest trends, techniques, and technologies in interior and architectural design. We blend classic principles with modern touches to create spaces that are both current and timeless.",
+      "image": "../about-page/why-us/why-us2.png",
+      "align": "left"
     }
   ]

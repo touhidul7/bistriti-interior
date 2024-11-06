@@ -55,7 +55,7 @@ const page = () => {
       <section className="bg-black dark:bg-gray-900">
         <div className="container lg:px-16 py-5 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-0">
-            <Sectionheading title={"RECENT WORK"} />
+            <Sectionheading title={"RECENT WORK"} direction={"left"} />
             <section className="py-10 sm:py-16 lg:py-10">
               <div className="px-4 mx-auto sm:px-6 lg:px-2 max-w-7xl">
                 <div className="container mx-auto px-2 py-8">
