@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from "react";
-import whyUs from "@/public/data/whyChoose.json";
 import allMembers from "@/public/data/allMembers.json";
 import experts from "@/public/data/experts.json";
 import Image from "next/image";
@@ -10,6 +9,7 @@ import clients from "@/public/data/clients.json";
 import aboutheroimg from "@/public/about-page/about-heading.jpg";
 import Sectionheading from "../Components/commoncomponents/Sectionheading";
 import { motion } from "framer-motion";
+import Whychooseus from "../Components/AboutComponents/Whychooseus";
 
 const Page = () => {
   return (
@@ -173,64 +173,7 @@ const Page = () => {
       </section>
 
       {/* why choose--------- */}
-      <section className="bg-black dark:bg-gray-900">
-        <div className="container px-16 py-10 mx-auto">
-          <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <Sectionheading title={"WHY US"} direction={"left"} />
-
-            <section className="py-10 sm:py-16 lg:py-20">
-              <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                {whyUs.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`xl:w-[100%] sm:w-[85%] xs:w-[90%] mx-auto flex md:flex-row xs:flex-col lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-4`}
-                  >
-                    {item.align === "left" ? (
-                      <>
-                        <div className="lg:w-[60%] xs:w-full">
-                          <Image
-                            src={item.image}
-                            alt="why us"
-                            width={600}
-                            height={400}
-                          />
-                        </div>
-                        <div className="lg:w-[50%] sm:w-full text-start xs:w-full dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
-                          <h2 className="text-6xl font-bold text-white">
-                            {item.title}
-                          </h2>
-                          <p className="text-xl mt-4 text-slate-300">
-                            {item.description}
-                          </p>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="lg:w-[50%] xs:w-full text-end dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
-                          <h2 className="text-6xl font-bold text-white">
-                            {item.title}
-                          </h2>
-                          <p className="text-xl mt-4 text-slate-300">
-                            {item.description}
-                          </p>
-                        </div>
-                        <div className="md:block sm:hidden xs:hidden lg:w-[60%] xs:w-full">
-                          <Image
-                            src={item.image}
-                            alt="why us"
-                            width={600}
-                            height={400}
-                          />
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
+      <Whychooseus/>
 
       {/* our clients--------- */}
       <section className="bg-black dark:bg-gray-900">
