@@ -29,7 +29,7 @@ const page = () => {
           <h1 className="text-5xl md:text-9xl font-bold w-[290px] lg:w-[600px] lg:ps-20 border-r-[12px]  border-[#750000] ps-5  bg-black">
             Beyond
           </h1>
-          <h1 className="text-5xl md:text-9xl ps-5 lg:ps-20 font-bold w-[355px] lg:w-[1010px] pb-5 lg:pb-10  border-r-[12px] border-[#750000] bg-black">
+          <h1 className="text-5xl md:text-9xl ps-5 lg:ps-20 font-bold w-[355px] lg:w-[1025px] pb-5 lg:pb-10  border-r-[12px] border-[#750000] bg-black">
             Boundaries
             <span className="ml-4 lg:ml-9 item-center">
               <button className="group flex mt-5 lg:inline relative lg:min-h-[65px] min-h-[50px] lg:w-48 w-28 overflow-hidden border border-white hover:border-[#750000]  transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-[#750000] before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-[#750000] after:duration-500 hover:text-white hover:before:h-full hover:after:h-full md:text-2xl text-lg">
