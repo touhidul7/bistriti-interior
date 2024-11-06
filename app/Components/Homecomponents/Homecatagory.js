@@ -6,10 +6,10 @@ import Link from "next/link";
 export default function Homecatagory() {
   console.log(catagoryies);
   return (
-    <div className="p-10 bg-black flex justify-center">
+    <div className="lg:p-10 p-6 py-10 bg-black flex justify-center">
       {/* left image */}
       {catagoryies.map((data, i) => (
-        <div key={i} className="grid grid-cols-3 lg:p-20 gap-10 w-fit">
+        <div key={i} className="grid grid-cols-1 lg:grid-cols-3 lg:p-20 gap-10 w-fit">
           <div className="rounded-lg relative group cursor-pointer">
             <Image
               src={data.leftimage.image}
@@ -18,14 +18,12 @@ export default function Homecatagory() {
               className="rounded-lg object-cover w-full h-full"
               alt="sd"
             />
-            <div className=" absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-center items-center bg-black/30 rounded-lg">
-              <Link href={data.leftimage.link} className="text-2xl font-bold text-white">
+            <Link href={data.leftimage.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-10 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+              <Link href={data.leftimage.link} className="lg:text-xl font-bold text-white">
                 {data.leftimage.title}
               </Link>
-              <p className="hidden group-hover:block text-white mt-2 px-4 hover:transition-opacity hover:duration-100">
-                {data.leftimage.description}
-              </p>
-            </div>
+              
+            </Link>
           </div>
 
           {/* group images 1 */}
@@ -39,17 +37,16 @@ export default function Homecatagory() {
                   className="rounded-lg object-cover w-full h-auto"
                   alt="sd"
                 />
-                <div className=" absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-center items-center bg-black/30 rounded-lg">
-                  <Link href={group.link} className="text-2xl font-bold text-white">
+                <Link href={group.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-10 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                  <Link href={group.link} className="text-base font-bold text-white">
                     {group.title}
                   </Link>
-                  <p className="hidden group-hover:block text-white mt-2 px-4 text-justify">
-                    {group.description}
-                  </p>
-                </div>
+                  
+                </Link>
               </div>
             ))}
           </div>
+
           {/* group images 2 */}
           <div className="grid grid-cols-2 gap-6">
             {data.group2.map((group, i) => (
@@ -61,14 +58,12 @@ export default function Homecatagory() {
                   className="rounded-lg object-cover w-full h-auto"
                   alt="sd"
                 />
-                <div className=" absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-center items-center bg-black/30 rounded-lg">
-                  <Link href={group.link} className="text-2xl font-bold text-white">
+                <Link href={group.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-10 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                  <Link href={group.link} className="text-base font-bold text-white">
                     {group.title}
                   </Link>
-                  <p className="hidden group-hover:block text-white mt-2 px-4 text-justify">
-                    {group.description}
-                  </p>
-                </div>
+                 
+                </Link>
               </div>
             ))}
           </div>

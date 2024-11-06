@@ -43,13 +43,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {/* Mobile nav */}
-        <div className="dropdown dropdown-end lg:hidden">
+        <div className="dropdown dropdown-end lg:hidden bg-black">
           <div tabIndex={0} role="button">
             <IoIosMenu className="h-8 w-auto " />
           </div>
-          <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <ul tabIndex={0} className="dropdown-content bg-black menu  rounded-box z-[1] w-52 p-2 shadow">
             {menus.map((menu, index) => (
-              <li key={index}>
+              <li key={index} className="border-b-[1px] text-white border-gray-800 hover:text-[#FF323A] focus:text-[#FF323A]">
                 <Link href={menu.path}>{menu.name}</Link>
               </li>
             ))}
