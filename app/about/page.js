@@ -1,60 +1,37 @@
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/no-unescaped-entities */
 "use client";
-import { Carousel } from "flowbite-react";
-import React, { useEffect } from "react";
-import whyUs from "@/public/data/whyChoose.json";
+import React from "react";
 import allMembers from "@/public/data/allMembers.json";
 import experts from "@/public/data/experts.json";
 import Image from "next/image";
 import clients from "@/public/data/clients.json";
+import aboutheroimg from "@/public/about-page/about-heading.jpg";
+import Sectionheading from "../Components/commoncomponents/Sectionheading";
+import { motion } from "framer-motion";
+import Whychooseus from "../Components/AboutComponents/Whychooseus";
 
-const Page = () => {
+const Page = () =>{
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* ABOUT-HEADER------ */}
-      {/* <div className="relative bg-gradient-to-r from-black-800 to-black-800 h-screen text-white overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="../bistriti-about.jpg"
-            alt="Background Image"
-            className="object-cover object-center w-full h-full"
-          />
-
-          <div className="absolute inset-0 bg-black opacity-70"></div>
-        </div>
-
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <h1 className="text-9xl font-bold leading-tight mb-4">ABOUT US</h1>
-          <p className="text-lg text-2xl text-gray-300 mb-8 ">
-            MAKE YOUR IMAGINATION TO REALITY
-          </p>
-        </div>
-
-        <div className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gray-500 opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100"></div>
-          <div className="relative z-10 p-6">
-            <h1 className="text-white">Fade In Effect</h1>
-            <p className="text-white">
-              Hover over this area to see the fade effect from top to down.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
       <div className="relative bg-gradient-to-r from-black-800 to-black-800 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="../about-page/about-heading.jpg"
+          <Image
+            height={100}
+            width={100}
+            src={aboutheroimg}
             alt="Background Image"
             className="object-cover object-center w-full h-full zoom-in"
           />
-          <div className="absolute inset-0 bg-black opacity-70"></div>
+          <div className="absolute inset-0 bg-black opacity-55"></div>
         </div>
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <h1 className="text-9xl font-bold leading-tight mb-4 fade-in">
+          <h1 className="lg:text-9xl text-6xl font-bold leading-tight mb-4 fade-in">
             ABOUT US
           </h1>
-          <p className="text-lg text-2xl text-gray-300 mb-8">
+          <p className="text-lg lg:text-2xl text-gray-300 mb-8">
             MAKE YOUR IMAGINATION TO REALITY
           </p>
         </div>
@@ -70,26 +47,28 @@ const Page = () => {
         </div>
       </div>
 
-      {/* Our Story--------- */}
+      {/* Our Story------------------ */}
+      {/* <motion.div
+      className="mt-20"
+      initial={{x:300}}
+      whileInView={{x:0}}
+      transition={{duration: 1, delay: 0.1, ease: "easeOut"}}
+      > */}
+      {/* </motion.div> */}
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-5 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-20">
-            <h1 className="text-9xl font-bold  text-white -mb-16 opacity-[5%]">
-              OUR STORY
-            </h1>
-            <h2 className="text-8xl font-semibold  text-white mb-10 fade-in2">
-              OUR STORY
-            </h2>
+            <Sectionheading title={"OUR STORY"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
-              <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+              <div className="px-0 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <section className="dark:bg-gray-900">
-                  <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-3 lg:px-6">
+                  <div className="gap-16 items-center  px-0 mx-auto max-w-screen-xl lg:grid lg:grid-cols-3 lg:px-6">
                     <div className="col-span-1 font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white text-end dark:text-white">
+                      <h2 className="mb-4 text-4xl lg:text-6xl tracking-tight font-extrabold text-white lg:text-end dark:text-white">
                         Designing Dreams Building Reality
                       </h2>
-                      <p className="mb-4 text-end">
+                      <p className="mb-4 lg:text-end">
                         Founded to redefine the essence of spaces, BISTRITI is
                         fueled by a deep passion for design, innovation, and
                         meticulous attention to detail. Our mission goes beyond
@@ -98,23 +77,35 @@ const Page = () => {
                         identities and aspirations. From the warmth of intimate
                         homes to the vibrancy of bustling commercial spaces, we
                         believe every project holds the potential to inspire,
-                        uplift, and transform. Our team collaborates intimately
-                        with clients, harmonizing style with purpose to deliver
-                        spaces that not only look beautiful but also feel
-                        profoundly personal and welcoming.
+                        uplift, and transform.
                       </p>
                     </div>
                     <div className="col-span-2 grid grid-cols-2 gap-6 mt-8">
-                      <img
+                      <Image
+                        width={100}
+                        height={100}
                         className="w-full"
                         src="../about-page/story/story-1.png"
                         alt="office content 1"
                       />
-                      <img
-                        className="mt-4 w-full lg:mt-10"
-                        src="../about-page/story/story-2.png"
-                        alt="office content 2"
-                      />
+                      <motion.div
+                        className="w-fit lg:mt-10"
+                        initial={{ y: 300 }}
+                        whileInView={{ y: 0 }}
+                        transition={{
+                          duration: 1,
+                          delay: 0.1,
+                          ease: "easeOut",
+                        }}
+                      >
+                        <Image
+                          width={100}
+                          height={100}
+                          className="w-full"
+                          src="../about-page/story/story-2.png"
+                          alt="office content 2"
+                        />
+                      </motion.div>
                     </div>
                   </div>
                 </section>
@@ -126,21 +117,18 @@ const Page = () => {
 
       {/* EXPERTS--------- */}
       <section className="bg-black dark:bg-gray-900">
-        <div className="container px-16 py-10 mx-auto">
+        <div className="container px-2 lg:px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-10">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              OUR EXPERTS
-            </h1>
-            <h2 className="text-8xl font-semibold text-white mb-20 fade-in2">
-              OUR EXPERTS
-            </h2>
+            <Sectionheading title={"OUR EXPERTS"} direction={"left"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
               <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-x-12">
                   {experts.map((expert, index) => (
                     <div key={index}>
-                      <img
+                      <Image
+                        height={100}
+                        width={100}
                         className="w-full"
                         src={expert.image}
                         alt={expert.alt}
@@ -156,21 +144,18 @@ const Page = () => {
 
       {/* all members--------- */}
       <section className="bg-black dark:bg-gray-900">
-        <div className="container px-16 py-10 mx-auto">
+        <div className="container px-2 lg:px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              ALL MEMBERS
-            </h1>
-            <h2 className="text-8xl font-semibold text-white mb-20">
-              ALL MEMBERS
-            </h2>
+            <Sectionheading title={"ALL MEMBERS"} direction={"right"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
               <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-x-12">
                   {allMembers.map((member, index) => (
                     <div key={index}>
-                      <img
+                      <Image
+                        width={100}
+                        height={1000}
                         className="w-full"
                         src={member.image}
                         alt={member.alt}
@@ -185,66 +170,13 @@ const Page = () => {
       </section>
 
       {/* why choose--------- */}
-      <section className="bg-black dark:bg-gray-900">
-        <div className="container px-16 py-10 mx-auto">
-          <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              WHY US
-            </h1>
-            <h2 className="text-8xl font-semibold text-white">WHY US</h2>
-
-            <section className="py-10 sm:py-16 lg:py-20">
-              <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                {whyUs.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`xl:w-[100%] sm:w-[85%] xs:w-[90%] mx-auto flex md:flex-row xs:flex-col lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-4`}
-                  >
-                    {item.align === "left" ? (
-                      <>
-                        <div className="lg:w-[60%] xs:w-full">
-                          <img src={item.image} alt="why us" />
-                        </div>
-                        <div className="lg:w-[50%] sm:w-full text-start xs:w-full dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
-                          <h2 className="text-6xl font-bold text-white">
-                            {item.title}
-                          </h2>
-                          <p className="text-xl mt-4 text-slate-300">
-                            {item.description}
-                          </p>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="lg:w-[50%] xs:w-full text-end dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
-                          <h2 className="text-6xl font-bold text-white">
-                            {item.title}
-                          </h2>
-                          <p className="text-xl mt-4 text-slate-300">
-                            {item.description}
-                          </p>
-                        </div>
-                        <div className="md:block sm:hidden xs:hidden lg:w-[60%] xs:w-full">
-                          <img src={item.image} alt="why us" />
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
+      <Whychooseus/>
 
       {/* our clients--------- */}
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <h1 className="text-9xl font-bold text-white -mb-16 opacity-[5%]">
-              OUR CLIENTS
-            </h1>
-            <h2 className="text-8xl font-semibold text-white">OUR CLIENTS</h2>
+            <Sectionheading title={"OUR CLIENTS"} direction={"right"} />
 
             <section className="py-10 sm:py-16 lg:py-20">
               <section className="py-base container">
@@ -267,13 +199,10 @@ const Page = () => {
                 </div>
               </section>
             </section>
-
-
           </div>
         </div>
       </section>
-      
-    </>
+    </div>
   );
 };
 

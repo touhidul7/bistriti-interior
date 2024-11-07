@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html data-theme="light" lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <Navbar/>
         {children}

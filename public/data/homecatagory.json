@@ -1,0 +1,63 @@
+[
+    {
+        "leftimage":{
+            "image":"./about-page/story/story-1.png",
+            "title":"Architecture design",
+            "description":"sadfasdf",
+            "link":"/"
+        },
+        "group1":[
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Expert",
+                "link":"/"
+            },
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Expert",
+                "link":"/"
+            },
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Expert",
+                "link":"/"
+            },
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Expert",
+                "link":"/"
+            }
+        ],
+        "group2":[
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Architecture",
+                "link":"/"
+            },
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Architecture",
+                "link":"/"
+            },
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Architecture",
+                "link":"/"
+            },
+            {
+                "image":"./about-page/story/story-2.png",
+                "title":"Exterior Design",
+                "description":"Architecture",
+                "link":"/"
+            }
+        ]
+
+    }
+]
