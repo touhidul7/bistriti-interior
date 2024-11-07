@@ -11,7 +11,7 @@ import Sectionheading from "../Components/commoncomponents/Sectionheading";
 import { motion } from "framer-motion";
 import Whychooseus from "../Components/AboutComponents/Whychooseus";
 
-const Page = () => {
+const Page = () =>{
   return (
     <div className="overflow-x-hidden">
       {/* ABOUT-HEADER------ */}
@@ -28,7 +28,7 @@ const Page = () => {
         </div>
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <h1 className="text-9xl font-bold leading-tight mb-4 fade-in">
+          <h1 className="lg:text-9xl text-6xl font-bold leading-tight mb-4 fade-in">
             ABOUT US
           </h1>
           <p className="text-lg lg:text-2xl text-gray-300 mb-8">
@@ -61,14 +61,14 @@ const Page = () => {
             <Sectionheading title={"OUR STORY"} />
 
             <section className="py-10 sm:py-16 lg:py-10">
-              <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+              <div className="px-0 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <section className="dark:bg-gray-900">
-                  <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-3 lg:px-6">
+                  <div className="gap-16 items-center  px-0 mx-auto max-w-screen-xl lg:grid lg:grid-cols-3 lg:px-6">
                     <div className="col-span-1 font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white text-end dark:text-white">
+                      <h2 className="mb-4 text-4xl lg:text-6xl tracking-tight font-extrabold text-white lg:text-end dark:text-white">
                         Designing Dreams Building Reality
                       </h2>
-                      <p className="mb-4 text-end">
+                      <p className="mb-4 lg:text-end">
                         Founded to redefine the essence of spaces, BISTRITI is
                         fueled by a deep passion for design, innovation, and
                         meticulous attention to detail. Our mission goes beyond
@@ -77,10 +77,7 @@ const Page = () => {
                         identities and aspirations. From the warmth of intimate
                         homes to the vibrancy of bustling commercial spaces, we
                         believe every project holds the potential to inspire,
-                        uplift, and transform. Our team collaborates intimately
-                        with clients, harmonizing style with purpose to deliver
-                        spaces that not only look beautiful but also feel
-                        profoundly personal and welcoming.
+                        uplift, and transform.
                       </p>
                     </div>
                     <div className="col-span-2 grid grid-cols-2 gap-6 mt-8">
@@ -120,7 +117,7 @@ const Page = () => {
 
       {/* EXPERTS--------- */}
       <section className="bg-black dark:bg-gray-900">
-        <div className="container px-16 py-10 mx-auto">
+        <div className="container px-2 lg:px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mt-10">
             <Sectionheading title={"OUR EXPERTS"} direction={"left"} />
 
@@ -147,7 +144,7 @@ const Page = () => {
 
       {/* all members--------- */}
       <section className="bg-black dark:bg-gray-900">
-        <div className="container px-16 py-10 mx-auto">
+        <div className="container px-2 lg:px-16 py-10 mx-auto">
           <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
             <Sectionheading title={"ALL MEMBERS"} direction={"right"} />
 
@@ -172,70 +169,8 @@ const Page = () => {
         </div>
       </section>
 
-<<<<<<< HEAD
-      {/* why Us--------- */}
-      <section className="bg-black dark:bg-gray-900">
-        <div className="container px-16 py-10 mx-auto">
-          <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-            <Sectionheading title={"WHY US"} direction={"left"} />
-
-            <section className="py-10 sm:py-16 lg:py-20">
-              <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                {whyUs.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`xl:w-[100%] sm:w-[85%] xs:w-[90%] mx-auto flex md:flex-row xs:flex-col lg:gap-4 xs:gap-2 justify-center lg:items-stretch md:items-center mt-4`}
-                  >
-                    {item.align === "left" ? (
-                      <>
-                        <div className="lg:w-[60%] xs:w-full">
-                          <Image
-                            src={item.image}
-                            alt="why us"
-                            width={600}
-                            height={400}
-                          />
-                        </div>
-                        <div className="lg:w-[50%] sm:w-full text-start xs:w-full dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
-                          <h2 className="text-6xl font-bold text-white">
-                            {item.title}
-                          </h2>
-                          <p className="text-xl mt-4 text-slate-300">
-                            {item.description}
-                          </p>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="lg:w-[50%] xs:w-full text-end dark:bg-gray-900 dark:text-gray-400 md:p-4 xs:p-0 rounded-md">
-                          <h2 className="text-6xl font-bold text-white">
-                            {item.title}
-                          </h2>
-                          <p className="text-xl mt-4 text-slate-300">
-                            {item.description}
-                          </p>
-                        </div>
-                        <div className="md:block sm:hidden xs:hidden lg:w-[60%] xs:w-full">
-                          <Image
-                            src={item.image}
-                            alt="why us"
-                            width={600}
-                            height={400}
-                          />
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-=======
       {/* why choose--------- */}
       <Whychooseus/>
->>>>>>> 5282c5e9ed9ea02d92238882a1c89a0ba006acea
 
       {/* our clients--------- */}
       <section className="bg-black dark:bg-gray-900">
