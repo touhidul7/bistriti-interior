@@ -13,7 +13,7 @@ const page = () => {
       <section
         className="relative bg-black bg-cover bg-center mt-10 max-h-screen lg:h-screen flex items-end"
         style={{
-          backgroundImage: `url('../home-header4.jpg')`,
+          backgroundImage: `url('../home-header.jpg')`,
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
         }}
