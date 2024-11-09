@@ -12,7 +12,6 @@ const Navbar = () => {
   const menus = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about/" },
-    { name: "Team", path: "/team/" },
     { name: "Projects", path: "/projects/" },
     { name: "Contact", path: "/contact/" },
   ];
