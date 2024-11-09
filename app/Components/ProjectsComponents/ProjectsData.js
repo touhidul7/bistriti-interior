@@ -40,8 +40,7 @@ export default function ProjectsData() {
 
     return (
         <div className="p-20 z-50">
-            {/* Filter Section */}
-            <div className="flex gap-6 py-2 justify-center items-center bg-gray-900 text-white">
+            <div className="flex gap-6 py-6 justify-center items-center bg-gray-900 text-white lg:mx-20 mt-10">
                 {projectsData.categories.map((item, index) => (
                     <div key={index}>
                         <div className="dropdown dropdown-bottom dropdown-end">
@@ -59,7 +58,7 @@ export default function ProjectsData() {
                             {item.subcategories && item.subcategories.length > 0 && (
                                 <ul
                                     tabIndex={0}
-                                    className="dropdown-content menu rounded-box z-[1] w-32 p-2 shadow bg-gray-900 border-[1px]"
+                                    className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-gray-900 border-[1px]"
                                 >
                                     {item.subcategories.map((sub, i) => (
                                         <li key={i}>
