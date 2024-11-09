@@ -1,0 +1,79 @@
+{
+    "categories": [
+      {
+        "category": "Exterior Design",
+        "image": "https://via.placeholder.com/300x200.png?text=Exterior+Design",
+        "link": "/projects/exterior-design",
+        "heading": "Stunning Exterior Designs",
+        "content": "Explore our range of beautiful and modern exterior designs that enhance the curb appeal of your property."
+      },
+      {
+        "category": "Interior Design",
+        
+        "subcategories": [
+          {
+            "name": "Bedroom",
+            "image": "https://via.placeholder.com/300x200.png?text=Bedroom",
+            "link": "/projects/interior-design/bedroom",
+            "heading": "Cozy Bedroom Designs",
+            "content": "Browse our cozy and modern bedroom designs for a restful retreat."
+          },
+          {
+            "name": "Kitchen",
+            "image": "https://via.placeholder.com/300x200.png?text=Kitchen",
+            "link": "/projects/interior-design/kitchen",
+            "heading": "Modern Kitchen Designs",
+            "content": "Explore sleek and functional kitchen designs to elevate your culinary space."
+          },
+          {
+            "name": "Dining Room",
+            "image": "https://via.placeholder.com/300x200.png?text=Dining+Room",
+            "link": "/projects/interior-design/dining-room",
+            "heading": "Stylish Dining Rooms",
+            "content": "Find elegant dining room setups perfect for gatherings and family meals."
+          },
+          {
+            "name": "Bathroom",
+            "image": "https://via.placeholder.com/300x200.png?text=Bathroom",
+            "link": "/projects/interior-design/bathroom",
+            "heading": "Luxurious Bathroom Ideas",
+            "content": "Check out our designs for bathrooms that combine style with relaxation."
+          }
+        ]
+      },
+      {
+        "category": "Landscape",
+        "image": "https://via.placeholder.com/300x200.png?text=Landscape",
+        "link": "/projects/landscape",
+        "heading": "Beautiful Landscape Designs",
+        "content": "Get inspired by our landscape designs that bring the outdoors to life.",
+        "subcategories": [
+          {
+            "image": "https://via.placeholder.com/300x200.png?text=Landscape",
+            "link": "/projects/interior-design/bedroom",
+            "heading": "Cozy Bedroom Designs",
+            "content": "Browse our cozy and modern bedroom designs for a restful retreat."
+          },
+          {
+            "image": "https://via.placeholder.com/300x200.png?text=Landscape",
+            "link": "/projects/interior-design/kitchen",
+            "heading": "Modern Kitchen Designs",
+            "content": "Explore sleek and functional kitchen designs to elevate your culinary space."
+          },
+          {
+            "image": "https://via.placeholder.com/300x200.png?text=Landscape",
+            "link": "/projects/interior-design/dining-room",
+            "heading": "Stylish Dining Rooms",
+            "content": "Find elegant dining room setups perfect for gatherings and family meals."
+          },
+          {
+            "image": "https://via.placeholder.com/300x200.png?text=Landscape",
+            "link": "/projects/interior-design/bathroom",
+            "heading": "Luxurious Bathroom Ideas",
+            "content": "Check out our designs for bathrooms that combine style with relaxation."
+          }
+        ]
+      }
+    ]
+  }
+  
