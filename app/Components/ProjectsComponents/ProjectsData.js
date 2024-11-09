@@ -39,8 +39,14 @@ export default function ProjectsData() {
     };
 
     return (
-        <div className="p-20 z-50">
-            <div className="flex gap-6 py-6 justify-center items-center bg-gray-900 text-white lg:mx-20 mt-10">
+        <div className="p-20 ">
+            <div className="p-20 absolute w-full left-0 top-0 pb-32" style={{
+          backgroundImage: `url('../home-header.jpg')`,
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+        }}></div>
+
+            <div className="flex gap-6 py-6 justify-center items-center bg-gray-900 text-white lg:mx-20 mt-10 z-50">
                 {projectsData.categories.map((item, index) => (
                     <div key={index}>
                         <div className="dropdown dropdown-bottom dropdown-end">
@@ -58,7 +64,7 @@ export default function ProjectsData() {
                             {item.subcategories && item.subcategories.length > 0 && (
                                 <ul
                                     tabIndex={0}
-                                    className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-gray-900 border-[1px]"
+                                    className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-black/30 border-[1px] border-gray-800"
                                 >
                                     {item.subcategories.map((sub, i) => (
                                         <li key={i}>
