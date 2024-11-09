@@ -25,6 +25,8 @@ export default function Page() {
     if (result.success) {
       console.log(result);
       toast.success('Message Sent Successfully!')
+    }else{
+      toast.error('Error Sending Message')
     }
   }
 
@@ -91,6 +93,7 @@ const Input = ({ type, name, label, placeholder }) => {
         <label htmlFor={name} className="leading-7 text-sm text-gray-600">{label}</label>
         <input
           placeholder={placeholder}
+          required
           type={type}
           id={name}
           name={name}
@@ -108,6 +111,7 @@ const TextArea = ({ name, label, placeholder }) => {
         <label htmlFor={name} className="leading-7 text-sm text-gray-600">{label}</label>
         <textarea
           placeholder={placeholder}
+          required
           id={name}
           name={name}
           className="w-full bg-gray-900 rounded border border-gray-800 focus:border-none focus:ring-2 focus:ring-red-500 h-32 text-base outline-none text-gray-200 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
