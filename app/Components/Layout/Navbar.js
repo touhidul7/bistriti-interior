@@ -41,7 +41,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end w-[10%]">
         {/* Mobile nav */}
         <div className="dropdown dropdown-end lg:hidden bg-black">
           <div tabIndex={0} role="button">

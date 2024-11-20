@@ -11,13 +11,23 @@ export default function Homecatagory() {
       {catagoryies.map((data, i) => (
         <div key={i} className="grid grid-cols-1 lg:grid-cols-3 lg:p-20 gap-10 w-fit">
           <div className="rounded-lg relative group cursor-pointer">
-            <Image
+            {/* <Image
               src={data.leftimage.image}
               width={100}
               height={100}
               className="rounded-lg object-cover w-full h-full"
               alt="sd"
-            />
+            /> */}
+            <video
+                className="w-full h-auto object-cover border"
+                autoPlay
+                muted
+                loop
+            >
+                <source src="./homecatogory/interior-slowmo.mp4" type="video/mp4" />
+    
+                Your browser does not support the video tag.
+            </video>
             <Link href={data.leftimage.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-10 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
               <Link href={data.leftimage.link} className="lg:text-xl font-bold text-white">
                 {data.leftimage.title}
@@ -27,7 +37,7 @@ export default function Homecatagory() {
           </div>
 
           {/* group images 1 */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-8 pt-10">
             {data.group1.map((group, i) => (
               <div key={i} className="rounded-lg relative group cursor-pointer">
                 <Image
@@ -37,7 +47,7 @@ export default function Homecatagory() {
                   className="rounded-lg object-cover w-full h-auto"
                   alt="sd"
                 />
-                <Link href={group.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-10 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                <Link href={group.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-16 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
                   <Link href={group.link} className="text-base font-bold text-white">
                     {group.title}
                   </Link>
@@ -48,7 +58,7 @@ export default function Homecatagory() {
           </div>
 
           {/* group images 2 */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-8 pt-10">
             {data.group2.map((group, i) => (
               <div key={i} className="rounded-lg relative group cursor-pointer">
                 <Image
@@ -58,7 +68,7 @@ export default function Homecatagory() {
                   className="rounded-lg object-cover w-full h-auto"
                   alt="sd"
                 />
-                <Link href={group.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-10 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                <Link href={group.link} className="absolute m-auto top-0 bottom-0 w-full text-center flex flex-col justify-end pb-6 lg:pb-16 items-center bg-black/40 rounded-lg transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
                   <Link href={group.link} className="text-base font-bold text-white">
                     {group.title}
                   </Link>
