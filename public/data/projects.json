@@ -1,0 +1,157 @@
+{
+  "categories": [
+    {
+      "category": "Interior Design",
+      "subcategories": [
+        {
+          "name": "Bedroom",
+          "images": [
+            "../Projects/Interior/Bedroom/bedroom-1.jpg",
+            "../Projects/Interior/Bedroom/bedroom-2.jpg",
+            "../Projects/Interior/Bedroom/bedroom-3.jpg",
+            "../Projects/Interior/Bedroom/bedroom-4.jpg"
+            
+          ],
+          "link": "/projects/interior-design/bedroom",
+          "heading": "Cozy Bedroom Designs",
+          "content": "Browse our cozy and modern bedroom designs for a restful retreat."
+        },
+        {
+          "name": "Dining Room",
+          "images": [
+            "../Projects/Interior/Diningroom/dining-1.jpg",
+            "../Projects/Interior/Diningroom/dining-2.jpg",
+            "../Projects/Interior/Diningroom/dining-3.jpg",
+            "../Projects/Interior/Diningroom/dining-4.jpg"
+          ],
+          "link": "/projects/interior-design/dining-room",
+          "heading": "Stylish Dining Rooms",
+          "content": "Find elegant dining room setups perfect for gatherings and family meals."
+        },
+        {
+          "name": "Kitchen",
+          "images": [
+            "../Projects/Interior/Kitchen/kitchen-1.jpg",
+            "../Projects/Interior/Kitchen/kitchen-2.jpg",
+            "../Projects/Interior/Kitchen/kitchen-3.jpg"
+            
+          ],
+          "link": "/projects/interior-design/kitchen",
+          "heading": "Modern Kitchen Designs",
+          "content": "Explore sleek and functional kitchen designs to elevate your culinary space."
+        },
+        
+        {
+          "name": "Drawing Room",
+          "images": [
+            "../Projects/Interior/Drawingroom/drawing1.jpg",
+            "../Projects/Interior/Drawingroom/drawing2.jpg",
+            "../Projects/Interior/Drawingroom/drawing3.jpg",
+            "../Projects/Interior/Drawingroom/drawing4.jpg"
+          ],
+          "link": "/projects/interior-design/bathroom",
+          "heading": "Luxurious Drawing Room Ideas",
+          "content": "Check out our designs for Drawing Room that combine style with relaxation."
+        }
+      ]
+    },
+    {
+      "category": "Exterior Design",
+      "subcategories": [
+        {
+          "name": "Facade Designs",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Facade+Designs+1",
+            "https://via.placeholder.com/300x200.png?text=Facade+Designs+2",
+            "https://via.placeholder.com/300x200.png?text=Facade+Designs+3"
+          ],
+          "link": "/projects/exterior-design/facade-designs",
+          "heading": "Elegant Facade Designs",
+          "content": "Upgrade your property's appearance with stunning facade designs."
+        },
+        {
+          "name": "Garden Landscaping",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Garden+Landscaping+1",
+            "https://via.placeholder.com/300x200.png?text=Garden+Landscaping+2",
+            "https://via.placeholder.com/300x200.png?text=Garden+Landscaping+3"
+          ],
+          "link": "/projects/exterior-design/garden-landscaping",
+          "heading": "Exquisite Garden Landscaping",
+          "content": "Discover beautiful garden landscaping ideas to enhance your outdoor space."
+        },
+        {
+          "name": "Driveways and Walkways",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Driveways+and+Walkways+1",
+            "https://via.placeholder.com/300x200.png?text=Driveways+and+Walkways+2",
+            "https://via.placeholder.com/300x200.png?text=Driveways+and+Walkways+3"
+          ],
+          "link": "/projects/exterior-design/driveways-and-walkways",
+          "heading": "Durable Driveways and Walkways",
+          "content": "Explore designs for driveways and walkways that combine style and functionality."
+        },
+        {
+          "name": "Exterior Lighting",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Exterior+Lighting+1",
+            "https://via.placeholder.com/300x200.png?text=Exterior+Lighting+2",
+            "https://via.placeholder.com/300x200.png?text=Exterior+Lighting+3"
+          ],
+          "link": "/projects/exterior-design/exterior-lighting",
+          "heading": "Beautiful Exterior Lighting",
+          "content": "Illuminate your outdoor spaces with creative exterior lighting designs."
+        }
+      ]
+    },
+    {
+      "category": "Landscape",
+      "subcategories": [
+        {
+          "name": "Garden Landscaping",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Garden+Landscaping+1",
+            "https://via.placeholder.com/300x200.png?text=Garden+Landscaping+2",
+            "https://via.placeholder.com/300x200.png?text=Garden+Landscaping+3"
+          ],
+          "link": "/projects/landscape/garden-landscaping",
+          "heading": "Beautiful Garden Designs",
+          "content": "Transform your garden with our creative and beautiful landscaping ideas."
+        },
+        {
+          "name": "Outdoor Living Spaces",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Outdoor+Living+Spaces+1",
+            "https://via.placeholder.com/300x200.png?text=Outdoor+Living+Spaces+2",
+            "https://via.placeholder.com/300x200.png?text=Outdoor+Living+Spaces+3"
+          ],
+          "link": "/projects/landscape/outdoor-living-spaces",
+          "heading": "Stylish Outdoor Spaces",
+          "content": "Design functional and stylish outdoor living spaces perfect for relaxation and entertainment."
+        },
+        {
+          "name": "Patios and Decks",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Patios+and+Decks+1",
+            "https://via.placeholder.com/300x200.png?text=Patios+and+Decks+2",
+            "https://via.placeholder.com/300x200.png?text=Patios+and+Decks+3"
+          ],
+          "link": "/projects/landscape/patios-and-decks",
+          "heading": "Stunning Patios and Decks",
+          "content": "Build the perfect patio or deck to enhance your outdoor area."
+        },
+        {
+          "name": "Water Features",
+          "images": [
+            "https://via.placeholder.com/300x200.png?text=Water+Features+1",
+            "https://via.placeholder.com/300x200.png?text=Water+Features+2",
+            "https://via.placeholder.com/300x200.png?text=Water+Features+3"
+          ],
+          "link": "/projects/landscape/water-features",
+          "heading": "Relaxing Water Features",
+          "content": "Add tranquility to your landscape with custom water features like fountains and ponds."
+        }
+      ]
+    }
+  ]
+}

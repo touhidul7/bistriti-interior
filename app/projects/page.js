@@ -1,10 +1,10 @@
 import React from 'react'
-import CommingSoon from '../Components/commoncomponents/CommingSoon'
+import ProjectsData from '../Components/ProjectsComponents/ProjectsData'
 
 export default function page() {
   return (
     <div>
-      <CommingSoon/>
+      <ProjectsData/>
     </div>
   )
 }

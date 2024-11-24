@@ -48,12 +48,6 @@ const Page = () =>{
       </div>
 
       {/* Our Story------------------ */}
-      {/* <motion.div
-      className="mt-20"
-      initial={{x:300}}
-      whileInView={{x:0}}
-      transition={{duration: 1, delay: 0.1, ease: "easeOut"}}
-      > */}
       {/* </motion.div> */}
       <section className="bg-black dark:bg-gray-900">
         <div className="container px-16 py-5 mx-auto">
