@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="navbar bg-black text-white fixed w-full top-0 z-50 overflow-x-visible lg:px-20">
+    <div className="navbar bg-black  fixed w-full top-0 z-50 overflow-x-visible lg:px-20">
       <Link href={"/"} className="navbar-start">
         <Image
           src={logo} 
